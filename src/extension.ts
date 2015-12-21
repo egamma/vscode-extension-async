@@ -7,7 +7,7 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.window.showQuickPick(languages);
     };
 
-    var disposable = vscode.commands.registerCommand("extension.sayHello", showAllLanguages);
+    var disposable = vscode.commands.registerCommand("extension.showAllLanguages", showAllLanguages);
 
     context.subscriptions.push(disposable);
 }
