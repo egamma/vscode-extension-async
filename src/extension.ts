@@ -2,7 +2,7 @@ import * as vscode from "vscode";
 
 export function activate(context: vscode.ExtensionContext) {
 
-    var showAllLanguages = async () => {
+    var showAllLanguages = async () =>  {
         var languages = await vscode.languages.getLanguages();
         vscode.window.showQuickPick(languages);
     };
